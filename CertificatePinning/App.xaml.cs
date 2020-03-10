@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CertificatePinning.helpers;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,6 +11,7 @@ namespace CertificatePinning
         {
             InitializeComponent();
 
+            HttpsValidation.Initialize();
             MainPage = new MainPage();
         }
 
