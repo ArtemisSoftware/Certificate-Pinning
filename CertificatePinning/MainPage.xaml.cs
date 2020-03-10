@@ -13,9 +13,21 @@ namespace CertificatePinning
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
+        ServiceViewModel ViewModel => BindingContext as ServiceViewModel;
         public MainPage()
         {
             InitializeComponent();
+            FetchData();
+        }
+
+        void LoadData(object sender, System.EventArgs e)
+        {
+            FetchData();
+        }
+
+        async void FetchData()
+        {
+            await ViewModel.GetAsync();
         }
     }
 }
