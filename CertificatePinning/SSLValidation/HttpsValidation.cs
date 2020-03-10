@@ -5,7 +5,7 @@ using System.Net;
 using System.Net.Security;
 using System.Security.Cryptography.X509Certificates;
 
-namespace CertificatePinning.helpers
+namespace CertificatePinning.SSLValidation
 {
     public static class HttpsValidation
     {

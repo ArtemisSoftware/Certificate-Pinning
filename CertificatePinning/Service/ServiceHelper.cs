@@ -6,7 +6,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CertificatePinning.helpers
+namespace CertificatePinning.Service
 {
     public class ServiceHelper
     {
@@ -16,7 +16,7 @@ namespace CertificatePinning.helpers
         const string SERVICE_RELATIVE_URL = "/my/api/path";
 
 
-        private async Task<string> GetDataAsync(string baseUrl, string relUrl)
+        public async Task<string> GetDataAsync(string baseUrl, string relUrl)
         {
             var uri = new Uri(relUrl, UriKind.Relative);
             var request = new HttpRequestMessage

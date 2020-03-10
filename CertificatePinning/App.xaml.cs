@@ -1,4 +1,4 @@
-﻿using CertificatePinning.helpers;
+﻿using CertificatePinning.SSLValidation;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
